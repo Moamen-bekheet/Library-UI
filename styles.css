@@ -524,3 +524,13 @@ form{
   flex-direction: column;
   justify-content: center;
 }
+.read-button, .del-button{
+  border-radius: 1rem;
+    border: none;
+    background-color: #607EAA;
+    color: #F9F5EB;
+    padding: 0.2rem 1rem;
+}
+.book-item-card svg{
+  fill: #607EAA;
+}

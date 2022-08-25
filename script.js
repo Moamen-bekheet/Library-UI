@@ -50,6 +50,7 @@ form.addEventListener('submit', (e)=>{
     delButton.textContent = 'remove';
     delButton.type = 'button';
     delButton.id = `${bookCount}del-button`;
+    delButton.classList.add('del-button');
     del.appendChild(delButton);
     flexIcons.appendChild(del);
 
@@ -68,6 +69,7 @@ form.addEventListener('submit', (e)=>{
     }
     markAsReadButton.type = 'button';
     markAsReadButton.id = `${bookCount}read-button`;
+    markAsReadButton.classList.add('read-button');
     markAsRead.appendChild(markAsReadButton);
     flexIcons.appendChild(markAsRead);
 
@@ -79,6 +81,7 @@ form.addEventListener('submit', (e)=>{
     for(let prop in book){
         if(i==0){
             const header = document.createElement('h2');
+            header.style.color = '#607EAA';
             header.textContent = book[prop];
             bookDetails.appendChild(header);
             i++
@@ -86,6 +89,7 @@ form.addEventListener('submit', (e)=>{
             //the title should be an h2 element the rest are paragraphs
         }
         const paragraph = document.createElement('p');
+        paragraph.style.color = '#607EAA';
         paragraph.textContent = book[prop];
         bookDetails.appendChild(paragraph);
     }

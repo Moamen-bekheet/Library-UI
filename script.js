@@ -104,7 +104,14 @@ form.addEventListener('submit', (e)=>{
         }
     })
     delButton.addEventListener('click', (e)=>{
+        for(let k=0; k<myLibrary.length; k++){
+            if(myLibrary[k].id===book.id){
+                myLibrary.splice(k,1);
+                books.removeChild(bookCard);
+                break;
+            }
 
+        }
     })
 
     bookCount++;

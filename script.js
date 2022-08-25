@@ -110,7 +110,6 @@ form.addEventListener('submit', (e)=>{
                 books.removeChild(bookCard);
                 break;
             }
-
         }
     })
 

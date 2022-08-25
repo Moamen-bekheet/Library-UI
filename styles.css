@@ -352,7 +352,9 @@ template {
 :root{
   height: 100vh;
 }
-
+.book-item-card h2, .book-item-card p{
+  margin: .5rem 0;
+}
 .screen{
   height: 100vh;
   position: relative;

@@ -537,7 +537,7 @@ form{
 .filler{
   display: none;
 }
-@media (max-width: 500px){
+@media (max-width: 550px){
   .filler{
     display: grid;
     visibility: hidden;

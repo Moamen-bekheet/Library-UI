@@ -534,3 +534,25 @@ form{
 .book-item-card svg{
   fill: #607EAA;
 }
+.filler{
+  display: none;
+}
+@media (max-width: 500px){
+  .filler{
+    display: grid;
+    visibility: hidden;
+  }
+  .sidebar span{
+    display: none;
+  }
+  .sidebar li{
+    text-align: center;
+  }
+  .logo{
+    padding: 0;
+
+  }
+  .sidebar ul{
+    padding-left: 0;
+  }
+}
